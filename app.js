@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-mongoose.connect("mongodb://0.0.0.0:27017/flipr_hackathon")
+mongoose.connect("mongodb://mongodb:27017/flipr_hackathon")
 .then(
     () =>{
         console.log("Connected to MongoDB.....");

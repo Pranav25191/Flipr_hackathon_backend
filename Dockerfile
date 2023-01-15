@@ -6,9 +6,9 @@ WORKDIR /usr/src/app
 COPY ./package*.json ./
 
 RUN npm install
-RUN npm i nodemon
+RUN npm install nodemon
 
 COPY ./ /usr/src/app/
 EXPOSE 4444
 
-CMD ["node ", "app.js" ]
+CMD ["npm", "start" ]
